@@ -1,0 +1,9 @@
+@import "../abstracts/variables.scss";
+
+.title-pokemon {
+  font-size: $name-pokemon;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  text-transform: capitalize;
+}
