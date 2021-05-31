@@ -1,22 +1,12 @@
-import Vue from "vue";
-import Vuex from "vuex";
+import Vue from 'vue';
+import Vuex from 'vuex';
+
+import { pokemonsModule } from './pokemons';
 
 Vue.use(Vuex);
 
 export default new Vuex.Store({
-  state: {
-    fovitePokemons: [],
-    favoritePokemon: null,
-  },
-  mutations: {
-    addPokemon(state) {
-      state.fovitePokemons = [state.favoritePokemon, ...state.fovitePokemons];
-    },
-  },
-  actions: {
-    addPokemonAction(context) {
-      context.commit("addPokemon");
-    },
-  },
-  modules: {},
+  modules: {
+    pokemons: pokemonsModule
+  }
 });
