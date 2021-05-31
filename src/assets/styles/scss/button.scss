@@ -1,0 +1,29 @@
+button {
+  cursor: pointer;
+  background-color: $gray-input-label;
+  color: $white-text;
+  padding: 11px 20px;
+  border-radius: 60px;
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  &[primary] {
+    background-color: $button-bg;
+  }
+  
+  &:active {
+    background-color: $button-bg-active;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  img {
+    height: 18px;
+    margin-right: 10px;
+  }
+}
