@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+  font-family: Lato, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: $white-bg;
+  min-height: 100vh;
+  min-width: 100vw;
+  font-size: 110%;
+  line-height: normal;
+  text-align: center;
+}
+
+
+button {
+  border: 0;
+  border-radius: 0;
+  display: inline-block;
+}
+
+h1 {
+  color: $dark-gray-text;
+}
